@@ -1,8 +1,8 @@
 import sqlite3
 from pathlib import Path
 
-PROJECT_DIR = Path(r"C:\Users\user\bite")
-DB_DIR = PROJECT_DIR / "database"
+PROJECT_DIR = Path(__file__).resolve().parent
+DB_DIR = PROJECT_DIR
 DB_DIR.mkdir(parents=True, exist_ok=True)
 
 DB_PATH = DB_DIR / "bite.db"
