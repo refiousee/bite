@@ -4,9 +4,9 @@ import numpy as np
 import sqlite3
 from datetime import date, timedelta
 
-import database.db as db
-from utils.forecasting import forecast_demand
-from utils.recommendation import generate_recommendations
+import db
+from forecasting import forecast_demand
+from recommendation import generate_recommendations
 
 
 # =========================================================
